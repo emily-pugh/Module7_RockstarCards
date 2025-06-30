@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8"> 
+<title>Rockstar Cards</title> 
+<meta name="viewport" content="width=device-width,initial-scale=1"> 
+<style> 
+    @font-face {
+        font-family: RockFont;
+        src: url("Funkrocker.otf");
+    }
+
+    h4 {
+    font-family: RockFont;
+    margin-bottom: -10px;
+    }
+    
+    .masthead {
+    background: rgb(230, 221, 221);
+    height: 5em;
+    position: relative; /* Added Phase 2 - 2 minutes */
+    z-index: 1; /* Added Phase 2 - 2 minutes */
+    
+    }
+
+    .centeredText {
+    text-align: center;
+    }
+
+    .site-title {
+    color: white;
+    font-family: RockFont;
+    font-size: 80px;
+    
+    }
+
+    .wrapper {
+        background-color: #dbeff1;
+        display:flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: auto;
+        width: 100%; 
+        gap: 5px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px; /* Added Phase 2 - 1 minute */ 
+        margin-left: 10px; /* Added Phase 2 - 1 minute */ 
+        margin-bottom: 20px; /* Added Phase 2 - 1 minute */ 
+        height: auto; /* Added Phase 2 - Changed from 400px to auto - 1 minute*/ 
+        width: 190px; 
+        background-color: #f5eef9;
+        border: 2px solid lightgray;
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .card p {
+        font-size: 12px;
+        padding: 10px; /* Added Phase 2 - 1 minute */ 
+        padding-top: 0; /* Added Phase 2 - 1 minute */ 
+    }
+
+    .cardimg {
+        display: flex;
+        position: relative;
+        flex: 0 0 100px;  /* Added Phase 2 - 10 minutes */ 
+        top: 20px; 
+        width: 90px;
+        border: rgb(230, 221, 221) solid 5px;
+        border-radius: 15px;
+        overflow: hidden;
+        
+        
+    }
+
+    .cardimg img { /* Added Phase 2 - 3 minutes*/ 
+        width: 90px;
+        height: 100px;
+    }
+
+    @media screen and (max-width: 450px) {
+        .card {
+            width: auto;
+        }
+
+        .cardimg {  /* Added Phase 2 - 1 minute */ 
+            width: 170px;
+        }
+
+        .cardimg img {  /* Added Phase 2 - 1 minute */ 
+            width: 170px;
+        }
+    }
+
+    .fixes {
+        height: auto; 
+        width: 100%; 
+        background-color: #C3ADDB;
+        margin-top: 10px;
+    }
+
+</style>
+</head> 
+<body> 
+    <header class="masthead">
+      <h1 class="site-title centeredText">Rock Stars</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="card">
+            <div class="cardimg">
+                <img src="gerryg.jpg">
+            </div>
+            <h4>Gerry Garcia</h4>
+            <p>
+                Jerome John Garcia (August 1, 1942 - August 9, 1995) was anAmerican musician known for being the principal songwriter,
+                lead guitarist, and a vocalist with the rock band Grateful Dead, which he co-founded and which came to prominence during
+                the counterculture of the 1960s.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardimg">
+                <img src="tinat.jpg">
+            </div>
+            <h4>Tina Turner</h4>
+            <p>
+                Tina Turner (born Anna Mae Bullock; November 26, 1939 - May 24, 2023) was a singer, songwriter and actress. Known as the
+                "Queen of Rock 'n' Roll", she rose to prominence as the lead singer of the husband-wife duo Ike & Tina Turner before launching a successful career as a solo performer.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardimg">
+                <img src="frankz.jpg">
+            </div>
+            <h4>Frank Zappa</h4>
+            <p>
+               Frank Vincent Zappa (December 21, 1940 - December 4, 1993) was an American musician, composer, and bandleader. His work is characterized by nonconformity, free-form improvisation, sound experimentation, musical virtuosity and satire of American culture.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardimg">
+                <img src="doloreso.jpg">
+            </div>
+            <h4>Dolores O'Riordan</h4>
+            <p>
+                Dolores Mary Eileen O'Riordan (6 September 1971 - 15 January 2018) was an Irish singer, musician and songwriter. She was the lead vocalist and lyricist of alternative rock band the Cranberries.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardimg">
+                <img src="gwens.jpg">
+            </div>
+            <h4>Gwen Stafani</h4>
+            <p>
+                Gwen Renée Stefani (born October 3, 1969) is an American singer and songwriter. She is a co-founder, lead vocalist, and
+                the primary songwriter of the band No Doubt, whose singles include "Just a Girl", "Spiderwebs", and "Don't Speak", from
+                their 1995 breakthrough studio album Tragic Kingdom.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardimg">
+                <img src="elvis.jpg">
+            </div>
+            <h4>Elvis Presley</h4>
+            <p>
+                Elvis Aaron Presley (January 8, 1935 - August 16, 1977), commonly referred by his first name, was an American singer and actor. Known as the "King of Rock and Roll", he is regarded as one of the most significant cultural figures of the 20th century.
+            </p>
+        </div>
+    </div>
+
+    <div class="fixes">
+        By the end of Phase 1, I had completed most of the code and just needed to make a few styling adjustments. I initially estimated that the changes in Phase 2 would take about 20 minutes, but they ended up taking closer to 30 minutes.
+        <ul>
+            <li>Added postion: relative and z-index: 1 in .masthead</li>
+            <li>Added margin-top: 30px;, margin-left: 10px;, and margin-bottom: 20px; in .card</li>
+            <li>Changed height: 400px; to height: auto; in .card</li>
+            <li>Added padding: 10px; and padding-top: 0; in .card p</li>
+            <li>Added flex: 0 0 100px; to .cardimg</li>
+            <li>Added .cardimg img</li>
+            <li>Added .cardimg and .cardimg img to media query</li>
+        </ul>
+    </div>
+
+</body>
+</html>
